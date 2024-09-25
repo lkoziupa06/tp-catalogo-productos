@@ -1,13 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './App.js'
+import Productos from './pages/Productos/index.jsx'
+import Producto from './pages/Producto/index.jsx'
+import Contacto from './pages/Contacto/index.jsx'
+import Layout from './pages/layout.jsx'
 
+export default function Index(){
+  <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Layout/>}>
+        <Route index element={<Home/>}/>
+        <Route path='productos' element={<Productos/>}/>
+        <Route path='producto/:id' element={<Producto/>}/>
+        <Route path='contacto' element={<Contacto/>}/>
+      </Route>
+    </Routes>
+  </BrowserRouter>
+}
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Index/>
   </React.StrictMode>
 );
 
