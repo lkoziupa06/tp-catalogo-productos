@@ -1,6 +1,4 @@
-import { NavBar } from "../components/NavBar";
-
-
+import { NavBar } from "../components/navbar";
 export default function Layout(){
     return <NavBar/>
 }

@@ -8,18 +8,21 @@ import Productos from './pages/Productos/index.jsx'
 import Producto from './pages/Producto/index.jsx'
 import Contacto from './pages/Contacto/index.jsx'
 import Layout from './pages/layout.jsx'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Index(){
-  <BrowserRouter>
-    <Routes>
-      <Route path='/' element={<Layout/>}>
-        <Route index element={<Home/>}/>
-        <Route path='productos' element={<Productos/>}/>
-        <Route path='producto/:id' element={<Producto/>}/>
-        <Route path='contacto' element={<Contacto/>}/>
-      </Route>
-    </Routes>
-  </BrowserRouter>
+  return(
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Layout/>}>
+          <Route index element={<Home/>}/>
+          <Route path='productos' element={<Productos/>}/>
+          <Route path='producto/:id' element={<Producto/>}/>
+          <Route path='contacto' element={<Contacto/>}/>
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar {
+  justify-content: flex-start;
+}
+
+.nav-link {
+  margin-right: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: lightgray;
+}
+
+.nav{
+  margin-left: 40px;
+}
