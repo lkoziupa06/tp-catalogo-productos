@@ -69,7 +69,28 @@
 }
 
 .carrusel-home-container{
-  display: flex; /* Necesario para usar justify-content */
-  justify-content: center; /* Centrará el contenido horizontalmente */
-  align-items: center; /* Centrará el contenido verticalmente */
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.container-productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
+  gap: 20px; /* Espacio entre los productos */
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto; /* Centramos el contenedor */
+}
+
+@media (max-width: 768px) {
+  .container-productos {
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .container-productos {
+    grid-template-columns: 1fr; /* Una columna en pantallas muy pequeñas */
+  }
 }

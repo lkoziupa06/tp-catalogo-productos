@@ -1,0 +1,41 @@
+.card-producto {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    background-color: white;
+    cursor: pointer; /* Aparece como un botón */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Más sombra */
+    transition: all 0.3s ease; /* Suaviza las transiciones */
+  }
+  
+  .card-producto:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Más sombra al hacer hover */
+    transform: translateY(-5px); /* Efecto de levantarse al pasar el cursor */
+  }
+  
+  .card-producto:active {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más suave al hacer clic */
+    transform: translateY(0); /* Baja el efecto al hacer clic */
+  }
+  
+  .card-producto-imagen {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-producto-titulo {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .card-producto-precio {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  
