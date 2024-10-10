@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  background-color: #dbdbdb; /* El color de fondo que prefieras */
+  min-height: 100vh; /* Asegura que cubra toda la altura de la pantalla */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .App-logo {
@@ -43,14 +48,28 @@
 
 .nav-link {
   margin-right: 10px;
-  color: white;
+  color: lightgray;
   text-decoration: none;
 }
 
 .nav-link:hover {
-  color: lightgray;
+  color: white;
 }
 
 .nav{
   margin-left: 40px;
+}
+
+.carrusel-home {
+  width: 800px;
+  height: 400px;
+  margin: auto 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.carrusel-home-container{
+  display: flex; /* Necesario para usar justify-content */
+  justify-content: center; /* Centrará el contenido horizontalmente */
+  align-items: center; /* Centrará el contenido verticalmente */
 }

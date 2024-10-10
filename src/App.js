@@ -1,10 +1,12 @@
 import './App.css';
-import { Carrusel } from './components/carrusel';
+import { CarruselHome } from './components/carruselHome';
 
 function App() {
   return (
     <div className="App">
-      <Carrusel/>
+      <div className='carrusel-home-container'>
+        <CarruselHome/>
+      </div>
       <h2>Productos</h2>
     </div>
   );
