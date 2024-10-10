@@ -1,7 +1,7 @@
 .App {
   text-align: center;
-  background-color: #dbdbdb; /* El color de fondo que prefieras */
-  min-height: 100vh; /* Asegura que cubra toda la altura de la pantalla */
+  background-color: #dbdbdb;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -76,21 +76,89 @@
 
 .container-productos {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
-  gap: 20px; /* Espacio entre los productos */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
   padding: 20px;
   max-width: 1200px;
-  margin: 0 auto; /* Centramos el contenedor */
+  margin: 0 auto; 
 }
 
 @media (max-width: 768px) {
   .container-productos {
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas más pequeñas */
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
 @media (max-width: 480px) {
   .container-productos {
-    grid-template-columns: 1fr; /* Una columna en pantallas muy pequeñas */
+    grid-template-columns: 1fr; 
   }
+}
+
+.contacto-container {
+  padding-top: 20px;
+  background-color:#dbdbdb;
+}
+
+.contacto-container h2{
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contact-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px; /* Ancho más grande */
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
