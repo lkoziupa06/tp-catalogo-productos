@@ -13,7 +13,7 @@ import buzo3 from './images/buzo3.webp'
 
 const arrayProductos = [
     {
-        "id":"1",
+        "id":"0",
         "nombre":"Dunk Low Retro Negro",
         "categoria":"Calzado",
         "precio":"100000",
@@ -21,7 +21,7 @@ const arrayProductos = [
         "imagen":zapatillas1,
     },
     {
-        "id":"2",
+        "id":"1",
         "nombre":"Dunk Low Retro Azul",
         "categoria":"Calzado",
         "precio":"100000",
@@ -29,7 +29,7 @@ const arrayProductos = [
         "imagen":zapatillas2
     },
     {
-        "id":"3",
+        "id":"2",
         "nombre":"Dunk Low Retro Bordo",
         "categoria":"Calzado",
         "precio":"100000",
@@ -37,7 +37,7 @@ const arrayProductos = [
         "imagen":zapatillas3
     },
     {
-        "id":"4",
+        "id":"3",
         "nombre":"Remera Sportswear Club",
         "categoria":"Remeras",
         "precio":"50000",
@@ -45,7 +45,7 @@ const arrayProductos = [
         "imagen":remera1
     },
     {
-        "id":"5",
+        "id":"4",
         "nombre":"Remera Sportswear Club",
         "categoria":"Remeras",
         "precio":"50000",
@@ -53,7 +53,7 @@ const arrayProductos = [
         "imagen":remera2
     },
     {
-        "id":"6",
+        "id":"5",
         "nombre":"Remera Sportswear Club",
         "categoria":"Remeras",
         "precio":"50000",
@@ -61,7 +61,7 @@ const arrayProductos = [
         "imagen":remera3
     },
     {
-        "id":"7",
+        "id":"6",
         "nombre":"Pantalon Liverpool FC",
         "categoria":"Pantalones",
         "precio":"70000",
@@ -69,7 +69,7 @@ const arrayProductos = [
         "imagen":pantalon1
     },
     {
-        "id":"8",
+        "id":"7",
         "nombre":"Pantalon Liverpool FC",
         "categoria":"Pantalones",
         "precio":"70000",
@@ -77,7 +77,7 @@ const arrayProductos = [
         "imagen":pantalon2
     },
     {
-        "id":"9",
+        "id":"8",
         "nombre":"Pantalon Liverpool FC",
         "categoria":"Pantalones",
         "precio":"70000",
@@ -85,7 +85,7 @@ const arrayProductos = [
         "imagen":pantalon3
     },
     {
-        "id":"10",
+        "id":"9",
         "nombre":"Buzo Nike Tech",
         "categoria":"Buzos",
         "precio":"90000",
@@ -93,7 +93,7 @@ const arrayProductos = [
         "imagen":buzo1
     },
     {
-        "id":"11",
+        "id":"10",
         "nombre":"Buzo Nike Tech",
         "categoria":"Buzos",
         "precio":"90000",
@@ -101,7 +101,7 @@ const arrayProductos = [
         "imagen":buzo2
     },
     {
-        "id":"12",
+        "id":"11",
         "nombre":"Buzo Nike Tech",
         "categoria":"Buzos",
         "precio":"90000",
