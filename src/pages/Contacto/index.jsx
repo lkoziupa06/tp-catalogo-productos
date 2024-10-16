@@ -5,6 +5,6 @@ export default function Contacto(){
         <div className="contacto-container">
             <h2>Contactanos!</h2>
             <Form/>
-      </div>
+        </div>
     )
 }
