@@ -9,9 +9,9 @@ const CardProducto = ({producto}) => {
   }
   return (
     <div className="card-producto" onClick={handleClick}>
-      <img src={producto.imagen} alt={producto.nombre} className="card-producto-imagen" />
-      <h3 className="card-producto-titulo">{producto.nombre}</h3>
-      <p className="card-producto-precio">${producto.precio}</p>
+      <img src={producto.thumbnail} alt={producto.title} className="card-producto-imagen" />
+      <h3 className="card-producto-titulo">{producto.title}</h3>
+      <p className="card-producto-precio">${producto.price}</p>
     </div>
   );
 };
