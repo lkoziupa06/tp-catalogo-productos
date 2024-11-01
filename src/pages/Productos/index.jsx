@@ -12,7 +12,6 @@ export default function Productos() {
   const [categoriaSeleccionada, setCategoriaSeleccionada] = useState('');
 
   useEffect(() => {
-    // Obtener todos los productos al cargar la página
     axios.get('https://dummyjson.com/products')
       .then(response => {
         setProductos(response.data.products);
@@ -21,22 +20,18 @@ export default function Productos() {
       .catch(error => console.error("Error al obtener productos:", error));
   }, []);
 
-  // Derivar categorías de los productos iniciales
   const categorias = [...new Set(productos.map(producto => producto.category))];
 
   const handleCategoryClick = (categoria) => {
     setCategoriaSeleccionada(categoria);
 
     if (categoria === '') {
-      // Mostrar todos los productos si se selecciona "Todas"
       setProductosFiltrados(productos);
     } else {
-      // Filtrar los productos originales según la categoría seleccionada
       setProductosFiltrados(productos.filter(producto => producto.category === categoria));
     }
   };
 
-  // Filtrar productos por término de búsqueda en productos filtrados
   const productosBuscados = productosFiltrados.filter(producto =>
     producto.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
