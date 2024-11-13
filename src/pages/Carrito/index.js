@@ -1,25 +1,30 @@
 import React, { useContext } from 'react';
 import { CarritoContext } from '../../context/carritoContext';
+import { DetalleProductoCarrito } from '../../components/detalleProductoCarrito';
+import '../../App.css'
 
 export default function Carrito() {
   const { carrito, eliminarProducto, modificarCantidad, totalCompra } = useContext(CarritoContext);
 
   return (
-    <div className="carrito-page">
-      <h2>Carrito de Compras</h2>
+    <div className="producto-container">
+      <div className='title-container'>
+        <h2 className='title'>Carrito de Compras</h2>
+      </div>
       <ul>
         {carrito.map(producto => (
-          <li key={producto.id}>
-            {producto.title} - ${producto.price} x {producto.cantidad}
-            <div>
-              <button onClick={() => modificarCantidad(producto.id, producto.cantidad - 1)}>-</button>
-              <button onClick={() => modificarCantidad(producto.id, producto.cantidad + 1)}>+</button>
-              <button onClick={() => eliminarProducto(producto.id)}>Eliminar</button>
-            </div>
+          <li className='list-carrito'key={producto.id}>
+            <DetalleProductoCarrito
+              producto={producto}
+              modificarCantidad={modificarCantidad}
+              eliminarProducto={eliminarProducto}
+            />
           </li>
         ))}
       </ul>
-      <h3>Total: ${totalCompra.toFixed(2)}</h3>
+      <div className='title-container'>
+        <h3>Total: ${totalCompra.toFixed(2)}</h3>
+      </div>
     </div>
   );
 }
