@@ -8,8 +8,9 @@ import Productos from './pages/Productos/index.jsx'
 import Producto from './pages/Producto/index.jsx'
 import Contacto from './pages/Contacto/index.jsx'
 import Layout from './pages/layout.jsx'
+import Carrito from './pages/Carrito/index.js'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { CarritoProvider } from '/context/CarritoContext';
+import { CarritoProvider } from './context/carritoContext.js';
 
 export default function Index(){
   return(
@@ -20,6 +21,7 @@ export default function Index(){
           <Route path='productos' element={<Productos/>}/>
           <Route path='producto/:id' element={<Producto/>}/>
           <Route path='contacto' element={<Contacto/>}/>
+          <Route path='carrito' element={<Carrito/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
