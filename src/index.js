@@ -9,6 +9,7 @@ import Producto from './pages/Producto/index.jsx'
 import Contacto from './pages/Contacto/index.jsx'
 import Layout from './pages/layout.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { CarritoProvider } from '/context/CarritoContext';
 
 export default function Index(){
   return(
@@ -26,9 +27,9 @@ export default function Index(){
 }
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <CarritoProvider>
     <Index/>
-  </React.StrictMode>
+  </CarritoProvider>,
 );
 
 // If you want to start measuring performance in your app, pass a function
