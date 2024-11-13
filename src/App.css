@@ -286,11 +286,6 @@ button:hover {
   font-size: 16px; 
   color: #333; 
 }
-.sticky-navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
 
 .navbar {
   display: flex;
