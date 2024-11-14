@@ -1,7 +1,11 @@
 import '../App.css'
 export const Form = () =>{
+  
+  function refreshPage(){ 
+    window.location.reload(); 
+  }
     return(
-        <div className="form-container">
+      <div className="form-container">
         <form className="contact-form">
           <div className="form-group">
             <label htmlFor="nombre">Nombre</label>
@@ -30,7 +34,7 @@ export const Form = () =>{
               rows="5"
             />
           </div>
-          <button type="button">Enviar</button>
+          <button type="button" onClick={refreshPage}> <span>Enviar</span> </button> 
         </form>
       </div>
     )
